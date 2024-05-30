@@ -6,9 +6,6 @@ your list. You can search through your inventory
 and give a rating to each book and if you want 
 to delete that book from the list.
 
-###Demo
-You can try out the demo here https://book-search-app-sable.vercel.app/
-
 ### Tech Stack
 
 - React
@@ -31,6 +28,9 @@ You can try out the demo here https://book-search-app-sable.vercel.app/
 4. To run the app, type "npm run dev"
 5. Open up your web browser and navigate to 
 your local host which is shown in the terminal.
+
+###Demo
+You can try out the demo here https://book-search-app-sable.vercel.app/
 
 ### Usage
 

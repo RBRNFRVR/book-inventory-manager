@@ -18,7 +18,7 @@ function App() {
     const handleSubmit = (e) =>{
         e.preventDefault();
         // let apiUrl = `http://openlibrary.org/api/volumes/brief/isbn/${input}.json`
-        let secondApiUrl = `http://openlibrary.org/search.json?q=isbn:${input}&fields=key,author_key,author_name,editions,editions.isbn,title,subtitle,editions.language,editions.title,editions.subtitle,edition_count,editions.cover_i`
+        let secondApiUrl = `https://openlibrary.org/search.json?q=isbn:${input}&fields=key,author_key,author_name,editions,editions.isbn,title,subtitle,editions.language,editions.title,editions.subtitle,edition_count,editions.cover_i`
         const trimmedInput = input.trim();
 
         if(!trimmedInput){
@@ -27,7 +27,7 @@ function App() {
         }
 
         if(!/^\d{10}$|^\d{13}$/.test(trimmedInput)) {
-            setError("Please enter a 10 or 13 digit ISBN Number(Dashes not Necessary)")
+            setError("Please enter a 10 or 13 digit ISBN(Dashes Not Necessary)")
             return;
         }
 
@@ -42,7 +42,7 @@ function App() {
                     id: uuidv4(),
                     title: book.title,
                     authors: book.author_name || ['Unknown'],
-                    coverImage: edition.cover_i ? `http://covers.openlibrary.org/b/id/${edition.cover_i}-M.jpg` : 'placeholder.jpg',
+                    coverImage: edition.cover_i ? `https://covers.openlibrary.org/b/id/${edition.cover_i}-M.jpg` : 'placeholder.jpg',
                     ISBNs: edition.isbn || ['Unknown'],
                     rating: 0
                 }))

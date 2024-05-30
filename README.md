@@ -29,7 +29,7 @@ to delete that book from the list.
 5. Open up your web browser and navigate to 
 your local host which is shown in the terminal.
 
-###Demo
+### Demo
 You can try out the demo here https://book-search-app-sable.vercel.app/
 
 ### Usage

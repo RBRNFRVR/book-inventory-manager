@@ -1,0 +1,49 @@
+.card {
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the container */
+    gap: 20px; /* Space between image and content */
+    border: 1px solid ;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.card-image {
+    width: 270px;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the space without distorting */
+    border-radius: 8px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card-content h4 {
+    margin: 10px 0 5px;
+}
+
+.card-content p {
+    margin: 5px 0;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
